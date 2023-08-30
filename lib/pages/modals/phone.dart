@@ -32,7 +32,7 @@ class PhoneNumber extends StatelessWidget {
           children: [
             FaIcon(
               FontAwesomeIcons.phone,
-              size: 50,
+              size: 100,
               color: green,
             ),
             AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [

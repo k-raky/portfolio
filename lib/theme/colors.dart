@@ -5,3 +5,4 @@ const lightPurple = Color(0xFFB6A7DF);
 const white = Colors.white;
 const black = Colors.black;
 const green = Colors.green;
+const pink = Color.fromARGB(255, 192, 86, 121);

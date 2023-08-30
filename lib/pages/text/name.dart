@@ -16,20 +16,17 @@ class Name extends StatelessWidget {
         AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
           TyperAnimatedText(
             "Raky Kane",
-            speed: const Duration(milliseconds: 60),
+            speed: const Duration(milliseconds: 100),
             textStyle: deepPurpleText.copyWith(fontSize: 100),
           )
         ]),
-        AnimatedTextKit(
-            isRepeatingAnimation: false,
-            pause: const Duration(milliseconds: 30),
-            animatedTexts: [
-              TyperAnimatedText(
-                "Full Stack Mobile Developer",
-                speed: const Duration(milliseconds: 60),
-                textStyle: lightPurpleText.copyWith(fontSize: 40),
-              ),
-            ]),
+        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
+          TyperAnimatedText(
+            "Full Stack Mobile Developer",
+            speed: const Duration(milliseconds: 120),
+            textStyle: lightPurpleText.copyWith(fontSize: 40),
+          ),
+        ]),
         ClipRect(
           child: Image.asset('images/memoji.png'),
         )
