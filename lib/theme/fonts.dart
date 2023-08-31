@@ -13,3 +13,8 @@ const lightPurpleText = TextStyle(
   color: lightPurple,
   fontWeight: FontWeight.w500,
 );
+
+const lightText = TextStyle(
+  fontFamily: 'Work Sans',
+  fontWeight: FontWeight.w100,
+);
