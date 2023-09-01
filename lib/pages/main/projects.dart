@@ -17,6 +17,30 @@ class Projects extends StatelessWidget {
       'stack': 'Laravel',
       'link': null
     },
+    {
+      'screen': 'images/lebal3.png',
+      'desc': 'Application mobile de gestion de nano-credits',
+      'stack': 'Flutter, SpringBoot, AWS',
+      'link': null
+    },
+    {
+      'screen': 'images/niokomom.png',
+      'desc': 'Application mobile e-commerce de produits locaux',
+      'stack': 'React Native, Laravel',
+      'link': null
+    },
+    {
+      'screen': 'images/loopAlarm.png',
+      'desc': 'Application mobile repetitrice d\'alarmes',
+      'stack': 'Flutter',
+      'link': null
+    },
+    {
+      'screen': 'images/jairy.png',
+      'desc': 'Application mobile pour suivi capillaire',
+      'stack': 'React Native',
+      'link': null
+    },
   ];
 
   @override
@@ -56,7 +80,7 @@ class Projects extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width: width * 0.5,
-                                  height: height * 0.1,
+                                  height: height * 0.04,
                                   child: FittedBox(
                                     child: Text(
                                       item['desc']!,
