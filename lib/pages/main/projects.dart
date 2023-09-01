@@ -41,6 +41,12 @@ class Projects extends StatelessWidget {
       'stack': 'React Native',
       'link': null
     },
+    {
+      'screen': 'images/portfolio.png',
+      'desc': 'Portfolio',
+      'stack': 'Flutter',
+      'link': null
+    },
   ];
 
   @override

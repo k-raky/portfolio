@@ -13,14 +13,15 @@ class PhoneNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        FaIcon(
-          FontAwesomeIcons.phone,
-          size: width * 0.1,
-          color: green,
+        Image.asset(
+          'images/memojiCallme.png',
+          fit: BoxFit.contain,
+          height: height * 0.3,
         ),
         AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
           TypewriterAnimatedText(

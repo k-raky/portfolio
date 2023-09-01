@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:portfolio/pages/main/bubbles.dart';
+import 'package:portfolio/pages/main/bye.dart';
 import 'package:portfolio/pages/main/projects.dart';
 import 'package:portfolio/theme/colors.dart';
 
@@ -16,10 +17,8 @@ class PageContent extends StatefulWidget {
 class _PageContentState extends State<PageContent> {
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
-
     return PageView(
-        scrollDirection: Axis.vertical, children: [Bubbles(), Projects()]);
+        scrollDirection: Axis.vertical,
+        children: [Bubbles(), Projects(), Bye()]);
   }
 }
