@@ -3,18 +3,23 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 const deepPurpleText = TextStyle(
-  fontFamily: 'Work Sans',
+  fontFamily: 'Quicksand',
   color: deepPurple,
   fontWeight: FontWeight.w500,
 );
 
 const lightPurpleText = TextStyle(
-  fontFamily: 'Work Sans',
+  fontFamily: 'Quicksand',
   color: lightPurple,
   fontWeight: FontWeight.w500,
 );
 
 const lightText = TextStyle(
-  fontFamily: 'Work Sans',
+  fontFamily: 'Quicksand',
   fontWeight: FontWeight.w100,
+);
+
+const boldText = TextStyle(
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.w500,
 );

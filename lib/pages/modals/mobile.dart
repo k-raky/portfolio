@@ -5,13 +5,8 @@ class Mobile extends StatelessWidget {
   Mobile({super.key});
 
   final List<Map<String, String>> imgList = [
-    {'logo': 'images/bootstrapLogo.svg', 'name': 'images/bootstrapName.svg'},
-    {'logo': 'images/reactLogo.svg', 'name': 'images/reactName.svg'},
-    {'logo': 'images/flutterLogo.svg', 'name': 'images/flutterName.png'},
-    {'logo': 'images/laravelLogo.svg', 'name': 'images/laravelName.svg'},
-    {'logo': 'images/phpLogo.svg', 'name': 'images/phpName.svg'},
-    {'logo': 'images/springLogo.jpeg', 'name': 'images/springName.png'},
-    {'logo': 'images/jeeLogo.jpeg', 'name': 'images/jeeName.png'},
+    {'logo': 'images/reactLogo.png', 'name': 'images/rnName.png'},
+    {'logo': 'images/flutterLogo.png', 'name': 'images/flutterName.png'},
   ];
 
   final title = "Mobile Development";

@@ -21,11 +21,12 @@ class _CustomAppBarState extends State<CustomAppBar> {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: white,
-      actionsIconTheme: IconThemeData(color: black, size: 40, opacity: 0.7),
+      elevation: 0,
+      /* actionsIconTheme: IconThemeData(color: black, size: 40, opacity: 0.7),
       actions: const [
         FaIcon(FontAwesomeIcons.circleHalfStroke),
         FaIcon(FontAwesomeIcons.earthAfrica)
-      ],
+      ], */
     );
   }
 }

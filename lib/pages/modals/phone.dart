@@ -13,45 +13,30 @@ class PhoneNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(
-          width: width * 0.3,
-          child: FittedBox(
-              child: Text("Here is my number", style: lightPurpleText)),
+        FaIcon(
+          FontAwesomeIcons.phone,
+          size: width * 0.1,
+          color: green,
         ),
-        VerticalDivider(
-          thickness: 5.0,
-          color: deepPurple,
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            FaIcon(
-              FontAwesomeIcons.phone,
-              size: 100,
-              color: green,
-            ),
-            AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
-              TypewriterAnimatedText(
-                "00 221 77 282 01 71",
-                speed: const Duration(milliseconds: 60),
-                textStyle: deepPurpleText.copyWith(fontSize: 50),
-              )
-            ]),
-            TextButton(
-                onPressed: (() async {
-                  await Utils.launchUri('tel:00221772820171');
-                }),
-                child: Text(
-                  "Call me",
-                  style: lightPurpleText.copyWith(fontSize: 30),
-                ))
-          ],
-        )
+        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
+          TypewriterAnimatedText(
+            "00 221 77 282 01 71",
+            speed: const Duration(milliseconds: 60),
+            textStyle: deepPurpleText.copyWith(fontSize: 50),
+          )
+        ]),
+        TextButton(
+            onPressed: (() async {
+              await Utils.launchUri('tel:00221772820171');
+            }),
+            child: Text(
+              "Call me",
+              style: lightPurpleText.copyWith(fontSize: 30),
+            ))
       ],
     );
   }

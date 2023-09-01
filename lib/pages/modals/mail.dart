@@ -12,43 +12,31 @@ class Mail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    final height = MediaQuery.of(context).size.height;
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(
-          width: width * 0.3,
-          child: FittedBox(
-              child: Text("Here is my Email", style: lightPurpleText)),
+        Image.asset(
+          'images/gmail.png',
+          fit: BoxFit.contain,
+          height: height * 0.2,
         ),
-        VerticalDivider(
-          thickness: 5.0,
-          color: deepPurple,
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            ClipRect(
-              child: Image.asset('images/gmail.png'),
-            ),
-            AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
-              TypewriterAnimatedText(
-                "kaneraky12@gmail.com",
-                speed: const Duration(milliseconds: 60),
-                textStyle: deepPurpleText.copyWith(fontSize: 50),
-              )
-            ]),
-            TextButton(
-                onPressed: (() async {
-                  await Utils.launchUri('mailto:kaneraky12@gmail.com');
-                }),
-                child: Text(
-                  "Send me an email",
-                  style: lightPurpleText.copyWith(fontSize: 30),
-                ))
-          ],
-        )
+        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
+          TypewriterAnimatedText(
+            "kaneraky12@gmail.com",
+            speed: const Duration(milliseconds: 60),
+            textStyle: deepPurpleText.copyWith(fontSize: 50),
+          )
+        ]),
+        TextButton(
+            onPressed: (() async {
+              await Utils.launchUri('mailto:kaneraky12@gmail.com');
+            }),
+            child: Text(
+              "Send me an email",
+              style: lightPurpleText.copyWith(fontSize: 30),
+            ))
       ],
     );
   }
