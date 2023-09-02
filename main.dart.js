@@ -59392,28 +59392,28 @@ $0(){return this.a.iL(0,this.b,new A.zp(null))},
 $S:7}
 A.a2P.prototype={
 $0(){var s=t.N
-return this.a.iL(0,this.b,new A.GS(A.a([A.al(["logo","images/bootstrapLogo.png","name","images/bootstrapName.png"],s,s),A.al(["logo","images/reactLogo.png","name","images/reactName.png"],s,s),A.al(["logo","images/flutterLogo.png","name","images/flutterName.png"],s,s),A.al(["logo","images/laravelLogo.png","name","images/laravelName.png"],s,s),A.al(["logo","images/phpLogo.png","name","images/phpName.png"],s,s),A.al(["logo","images/springLogo.png","name","images/springName.png"],s,s),A.al(["logo","images/jeeLogo.png","name","images/jeeName.png"],s,s)],t.A7),null))},
+return this.a.iL(0,this.b,new A.GS(A.a([A.al(["logo","assets/images/bootstrapLogo.png","name","assets/images/bootstrapName.png"],s,s),A.al(["logo","assets/images/reactLogo.png","name","assets/images/reactName.png"],s,s),A.al(["logo","assets/images/flutterLogo.png","name","assets/images/flutterName.png"],s,s),A.al(["logo","assets/images/laravelLogo.png","name","assets/images/laravelName.png"],s,s),A.al(["logo","assets/images/phpLogo.png","name","assets/images/phpName.png"],s,s),A.al(["logo","assets/images/springLogo.png","name","assets/images/springName.png"],s,s),A.al(["logo","assets/images/jeeLogo.png","name","assets/images/jeeName.png"],s,s)],t.A7),null))},
 $S:7}
 A.a2Q.prototype={
 $0(){var s=t.N
-return this.a.iL(0,this.b,new A.Df(A.a([A.al(["logo","images/reactLogo.png","name","images/rnName.png"],s,s),A.al(["logo","images/flutterLogo.png","name","images/flutterName.png"],s,s)],t.A7),null))},
+return this.a.iL(0,this.b,new A.Df(A.a([A.al(["logo","assets/images/reactLogo.png","name","assets/images/rnName.png"],s,s),A.al(["logo","assets/images/flutterLogo.png","name","assets/images/flutterName.png"],s,s)],t.A7),null))},
 $S:7}
 A.a2R.prototype={
-$0(){var s="images/mysqlLogo.png",r="images/postgresLogo.png",q=t.N
-return this.a.iL(0,this.b,new A.AX(A.a([A.al(["logo",s,"name","images/mysqlName.png"],q,q),A.al(["logo",s,"name","images/myadminName.png"],q,q),A.al(["logo",r,"name","images/postgresName.png"],q,q),A.al(["logo",r,"name","images/pgadminName.png"],q,q),A.al(["logo","images/firebaseLogo.png","name","images/firebaseName.png"],q,q)],t.A7),null))},
+$0(){var s="assets/images/mysqlLogo.png",r="assets/images/postgresLogo.png",q=t.N
+return this.a.iL(0,this.b,new A.AX(A.a([A.al(["logo",s,"name","assets/images/mysqlName.png"],q,q),A.al(["logo",s,"name","assets/images/myadminName.png"],q,q),A.al(["logo",r,"name","assets/images/postgresName.png"],q,q),A.al(["logo",r,"name","assets/images/pgadminName.png"],q,q),A.al(["logo","assets/images/firebaseLogo.png","name","assets/images/firebaseName.png"],q,q)],t.A7),null))},
 $S:7}
 A.a2S.prototype={
 $0(){var s=t.N
-return this.a.iL(0,this.b,new A.B9(A.a([A.al(["logo","images/canvaLogo.png","name","images/canvaName.png"],s,s),A.al(["logo","images/figmaLogo.png","name","images/figmaName.png"],s,s),A.al(["logo","images/flflowLogo.png","name","images/flflowName.png"],s,s),A.al(["logo","images/framerLogo.png","name","images/framerName.png"],s,s)],t.A7),null))},
+return this.a.iL(0,this.b,new A.B9(A.a([A.al(["logo","assets/images/canvaLogo.png","name","assets/images/canvaName.png"],s,s),A.al(["logo","assets/images/figmaLogo.png","name","assets/images/figmaName.png"],s,s),A.al(["logo","assets/images/flflowLogo.png","name","assets/images/flflowName.png"],s,s),A.al(["logo","assets/images/framerLogo.png","name","assets/images/framerName.png"],s,s)],t.A7),null))},
 $S:7}
 A.zW.prototype={
 G(a){var s=null,r=t.w,q=a.J(r).f
-return A.dF(s,A.Yk(A.a([A.nM("images/bye.png",B.aU,a.J(r).f.a.b*0.4,s),A.fT(A.C2(A.fX("Bye",s,s,B.ec,s,s)),s,q.a.a*0.2)],t.D),B.aY,B.fM,B.at),s,s,s,s,s,s)}}
+return A.dF(s,A.Yk(A.a([A.nM("assets/images/bye.png",B.aU,a.J(r).f.a.b*0.4,s),A.fT(A.C2(A.fX("Bye",s,s,B.ec,s,s)),s,q.a.a*0.2)],t.D),B.aY,B.fM,B.at),s,s,s,s,s,s)}}
 A.ui.prototype={
 af(){return new A.JD(B.j)}}
 A.JD.prototype={
 G(a){var s=null,r=t.N,q=t.dR
-q=A.a([new A.qY(s),new A.Es(A.a([A.al(["screen","images/jsit.png","desc","Application back-office de gestion de commandes WooCommerce","stack","Laravel","link",null],r,q),A.al(["screen","images/lebal3.png","desc","Application mobile de gestion de nano-credits","stack","Flutter, SpringBoot, AWS","link",null],r,q),A.al(["screen","images/niokomom.png","desc","Application mobile e-commerce de produits locaux","stack","React Native, Laravel","link",null],r,q),A.al(["screen","images/loopAlarm.png","desc","Application mobile repetitrice d'alarmes","stack","Flutter","link",null],r,q),A.al(["screen","images/jairy.png","desc","Application mobile pour suivi capillaire","stack","React Native","link",null],r,q),A.al(["screen","images/portfolio.png","desc","Portfolio","stack","Flutter","link",null],r,q)],t.vN),s),new A.zW(s)],t.D)
+q=A.a([new A.qY(s),new A.Es(A.a([A.al(["screen","assets/images/jsit.png","desc","Application back-office de gestion de commandes WooCommerce","stack","Laravel","link",null],r,q),A.al(["screen","assets/images/lebal3.png","desc","Application mobile de gestion de nano-credits","stack","Flutter, SpringBoot, AWS","link",null],r,q),A.al(["screen","assets/images/niokomom.png","desc","Application mobile e-commerce de produits locaux","stack","React Native, Laravel","link",null],r,q),A.al(["screen","assets/images/loopAlarm.png","desc","Application mobile repetitrice d'alarmes","stack","Flutter","link",null],r,q),A.al(["screen","assets/images/jairy.png","desc","Application mobile pour suivi capillaire","stack","React Native","link",null],r,q),A.al(["screen","assets/images/portfolio.png","desc","Portfolio","stack","Flutter","link",null],r,q)],t.vN),s),new A.zW(s)],t.D)
 r=$.abL()
 return new A.oj(B.an,!1,r,s,!0,s,A.aea(q,!0,!0,!0),B.T,s,!0,s)}}
 A.Cx.prototype={
@@ -59457,7 +59457,7 @@ G(a){return new A.me(this.c,"Design",u.D,null)}}
 A.D4.prototype={
 G(a){var s=null,r=t.w
 a.J(r).toString
-return A.le(A.a([A.nM("images/gmail.png",B.aU,a.J(r).f.a.b*0.2,s),A.O_(A.a([A.aev("kaneraky12@gmail.com",B.lB,B.bs.i2(50))],t.rr),!1),A.a19(A.fX("Send me an email",s,s,B.bW.i2(30),s,s),new A.UW())],t.D),B.aY,B.bk,B.at)}}
+return A.le(A.a([A.nM("assets/images/gmail.png",B.aU,a.J(r).f.a.b*0.2,s),A.O_(A.a([A.aev("kaneraky12@gmail.com",B.lB,B.bs.i2(50))],t.rr),!1),A.a19(A.fX("Send me an email",s,s,B.bW.i2(30),s,s),new A.UW())],t.D),B.aY,B.bk,B.at)}}
 A.UW.prototype={
 $0(){var s=0,r=A.a_(t.H)
 var $async$$0=A.a0(function(a,b){if(a===1)return A.X(b,r)
@@ -59471,7 +59471,7 @@ G(a){return new A.me(this.c,"Mobile Development",u.D,null)}}
 A.Ec.prototype={
 G(a){var s=null,r=t.w
 a.J(r).toString
-return A.le(A.a([A.nM("images/memojiCallme.png",B.aU,a.J(r).f.a.b*0.3,s),A.O_(A.a([A.aev("00 221 77 282 01 71",B.lB,B.bs.i2(50))],t.rr),!1),A.a19(A.fX("Call me",s,s,B.bW.i2(30),s,s),new A.Wm())],t.D),B.aY,B.bk,B.at)}}
+return A.le(A.a([A.nM("assets/images/memojiCallme.png",B.aU,a.J(r).f.a.b*0.3,s),A.O_(A.a([A.aev("00 221 77 282 01 71",B.lB,B.bs.i2(50))],t.rr),!1),A.a19(A.fX("Call me",s,s,B.bW.i2(30),s,s),new A.Wm())],t.D),B.aY,B.bk,B.at)}}
 A.Wm.prototype={
 $0(){var s=0,r=A.a_(t.H)
 var $async$$0=A.a0(function(a,b){if(a===1)return A.X(b,r)
@@ -59484,7 +59484,7 @@ A.GS.prototype={
 G(a){return new A.me(this.c,"Web Development",u.D,null)}}
 A.Dl.prototype={
 G(a){var s=t.rr
-return A.le(A.a([A.O_(A.a([A.aeu("Raky Kane",B.af,B.bs.i2(100))],s),!1),A.O_(A.a([A.aeu("Full Stack Mobile Developer",B.zY,B.bW.i2(40))],s),!1),A.Pm(A.nM("images/memoji.png",null,null,null),B.T)],t.D),B.ca,B.fL,B.at)}}
+return A.le(A.a([A.O_(A.a([A.aeu("Raky Kane",B.af,B.bs.i2(100))],s),!1),A.O_(A.a([A.aeu("Full Stack Mobile Developer",B.zY,B.bW.i2(40))],s),!1),A.Pm(A.nM("assets/images/memoji.png",null,null,null),B.T)],t.D),B.ca,B.fL,B.at)}}
 A.FO.prototype={
 G(a){var s=null
 return A.dF(s,A.fX("Skills",s,s,B.bs.i2(100),s,s),s,s,s,s,s,s)}}
