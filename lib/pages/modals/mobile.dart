@@ -14,11 +14,11 @@ class Mobile extends StatelessWidget {
 
   final title = "Mobile Development";
 
-  final content =
-      "Proficient in UML, Trello, Jira, and Scrum methodologies. Skilled in using tools like StarUML for designing robust software architectures and collaborating effectively with teams through agile workflows.";
-
   @override
   Widget build(BuildContext context) {
-    return Slideshow(imgList: imgList, title: title, content: content);
+    return Slideshow(
+      imgList: imgList,
+      title: title,
+    );
   }
 }

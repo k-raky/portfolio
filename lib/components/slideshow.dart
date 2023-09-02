@@ -10,12 +10,11 @@ import 'package:carousel_slider/carousel_slider.dart';
 class Slideshow extends StatelessWidget {
   final List<Map<String, String>> imgList;
   final String title;
-  final String content;
-  const Slideshow(
-      {super.key,
-      required this.imgList,
-      required this.title,
-      required this.content});
+  const Slideshow({
+    super.key,
+    required this.imgList,
+    required this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,17 +25,8 @@ class Slideshow extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          height: height * 0.05,
+          height: height * 0.08,
           child: FittedBox(child: Text(title, style: lightPurpleText)),
-        ),
-        SizedBox(
-          width: width,
-          child: Text(
-            content,
-            style: lightText,
-            softWrap: true,
-            overflow: TextOverflow.clip,
-          ),
         ),
         Container(
             width: width,

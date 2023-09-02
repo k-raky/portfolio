@@ -8,28 +8,27 @@ class AboutMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        Text(
-          "About me",
-          style: deepPurpleText,
+      children: [
+        SizedBox(
+          height: height * 0.05,
+          child: FittedBox(
+            child: Text(
+              'About me',
+              style: boldText,
+            ),
+          ),
         ),
         Text(
-          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed ac justo in libero feugiat ullamcorper. Quisque commodo malesuada orci, 
-        id tincidunt lorem lacinia id. Nulla nec lectus ac urna laoreet pharetra. 
-        Etiam vestibulum, justo nec bibendum dictum, justo eros sodales tortor, 
-        ac varius ipsum velit eget arcu Pellentesque posuere, arcu eget finibus hendrerit, 
-        lectus justo bibendum justo, et feugiat lectus urna a ligula. Nam commodo arcu a nulla 
-        scelerisque, eget tristique tortor gravida. Sed sit amet semper ipsum, eu elementum elit. 
-        Maecenas nec ultricies ligula. Nulla facilisi. Vivamus ac congue enim. Vestibulum ante ipsum 
-        primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam a interdum erat. 
-        Sed et odio vel augue consectetur congue vel in purus. Curabitur eget diam eget augue c
-        onsectetur lacinia nec ut nulla. Suspendisse eget mi sed ex posuere blandit a vel neque.
-''',
-          style: lightText,
+          '''Greetings! I'm Raky, a passionate Full Stack Developer. My journey in the world of development has been an exciting one, allowing me to create and implement innovative web and mobile applications.\n\n My work revolves around problem-solving and innovation. I thrive on tackling complex challenges, whether it's designing user-friendly interfaces, complex features with AI, fixing bugs, or crafting efficient algorithms. My primary goal is to deliver seamless and delightful digital experiences for users while ensuring that applications are robust and scalable.\n\n I possess expertise in both front-end and back-end development.  I'm dedicated to crafting responsive and visually appealing user interfaces. In the realm of back-end development, building server-side applications and designing efficient APIs are among my core strengths. Database management is another area where I excel. I have experience with both SQL and NoSQL databases, prioritizing data integrity and performance optimization. DevOps practices are also a part of my skill set. I'm familiar with CI/CD pipelines, Docker, Github actions, Gitlab and cloud platforms like AWS for seamless deployment and scaling of applications.\n\n Collaboration and effective communication are fundamental to my work. I thrive in team environments and firmly believe that strong teamwork is the key to successful projects. Staying updated with the latest industry trends and technologies is a commitment I hold dear. I'm dedicated to continuous learning and growth, ensuring that I deliver cutting-edge solutions. Please feel free to explore my portfolio to see some of the exciting projects I've had the privilege to work on. If you're interested in discussing potential collaborations or have any questions, don't hesitate to reach out. Thank you for visiting my portfolio, and I look forward to connecting with you.''',
+          style: lightText.copyWith(fontWeight: FontWeight.w400, fontSize: 18),
+          textAlign: TextAlign.justify,
+          softWrap: true,
         )
       ],
     );

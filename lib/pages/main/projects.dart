@@ -13,31 +13,31 @@ class Projects extends StatelessWidget {
   final List<Map<String, String?>> projectsInfo = [
     {
       'screen': 'assets/images/jsit.png',
-      'desc': 'Application back-office de gestion de commandes WooCommerce',
+      'desc': 'Back-office application for WooCommerce order management',
       'stack': 'Laravel',
       'link': null
     },
     {
       'screen': 'assets/images/lebal3.png',
-      'desc': 'Application mobile de gestion de nano-credits',
+      'desc': 'Mobile application for nano-credit management',
       'stack': 'Flutter, SpringBoot, AWS',
       'link': null
     },
     {
       'screen': 'assets/images/niokomom.png',
-      'desc': 'Application mobile e-commerce de produits locaux',
+      'desc': 'E-Commerce Mobile Application',
       'stack': 'React Native, Laravel',
       'link': null
     },
     {
       'screen': 'assets/images/loopAlarm.png',
-      'desc': 'Application mobile repetitrice d\'alarmes',
+      'desc': 'A countdown timer loop application',
       'stack': 'Flutter',
       'link': null
     },
     {
       'screen': 'assets/images/jairy.png',
-      'desc': 'Application mobile pour suivi capillaire',
+      'desc': 'Hair care journal mobile app',
       'stack': 'React Native',
       'link': null
     },
