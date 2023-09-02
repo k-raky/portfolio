@@ -8,4 +8,12 @@ class Utils {
       throw Exception('Could not launch $url');
     }
   }
+
+  static Future<void> launchFile(String url) async {
+    final Uri uri = Uri.file(url);
+
+    if (!await launchUrl(uri)) {
+      throw Exception('Could not launch $url');
+    }
+  }
 }

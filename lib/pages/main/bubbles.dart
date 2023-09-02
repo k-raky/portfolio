@@ -139,7 +139,7 @@ class _BubblesState extends State<Bubbles> {
                   icon: FontAwesomeIcons.file,
                   color: Colors.indigo,
                   onPress: (() async {
-                    await Utils.launchUri('file:/assets/files/RakyKane_CV.pdf');
+                    await Utils.launchFile('assets/files/RakyKane_CV.pdf');
                   }),
                 ),
                 Bubble(
