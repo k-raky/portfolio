@@ -5,10 +5,22 @@ class Design extends StatelessWidget {
   Design({super.key});
 
   final List<Map<String, String>> imgList = [
-    {'logo': 'images/canvaLogo.png', 'name': 'images/canvaName.png'},
-    {'logo': 'images/figmaLogo.png', 'name': 'images/figmaName.png'},
-    {'logo': 'images/flflowLogo.png', 'name': 'images/flflowName.png'},
-    {'logo': 'images/framerLogo.png', 'name': 'images/framerName.png'},
+    {
+      'logo': 'assets/images/canvaLogo.png',
+      'name': 'assets/images/canvaName.png'
+    },
+    {
+      'logo': 'assets/images/figmaLogo.png',
+      'name': 'assets/images/figmaName.png'
+    },
+    {
+      'logo': 'assets/images/flflowLogo.png',
+      'name': 'assets/images/flflowName.png'
+    },
+    {
+      'logo': 'assets/images/framerLogo.png',
+      'name': 'assets/images/framerName.png'
+    },
   ];
 
   final title = "Design";

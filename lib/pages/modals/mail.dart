@@ -18,7 +18,7 @@ class Mail extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image.asset(
-          'images/gmail.png',
+          'assets/images/gmail.png',
           fit: BoxFit.contain,
           height: height * 0.2,
         ),

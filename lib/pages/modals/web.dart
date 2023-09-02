@@ -5,13 +5,28 @@ class Web extends StatelessWidget {
   Web({super.key});
 
   final List<Map<String, String>> imgList = [
-    {'logo': 'images/bootstrapLogo.png', 'name': 'images/bootstrapName.png'},
-    {'logo': 'images/reactLogo.png', 'name': 'images/reactName.png'},
-    {'logo': 'images/flutterLogo.png', 'name': 'images/flutterName.png'},
-    {'logo': 'images/laravelLogo.png', 'name': 'images/laravelName.png'},
-    {'logo': 'images/phpLogo.png', 'name': 'images/phpName.png'},
-    {'logo': 'images/springLogo.png', 'name': 'images/springName.png'},
-    {'logo': 'images/jeeLogo.png', 'name': 'images/jeeName.png'},
+    {
+      'logo': 'assets/images/bootstrapLogo.png',
+      'name': 'assets/images/bootstrapName.png'
+    },
+    {
+      'logo': 'assets/images/reactLogo.png',
+      'name': 'assets/images/reactName.png'
+    },
+    {
+      'logo': 'assets/images/flutterLogo.png',
+      'name': 'assets/images/flutterName.png'
+    },
+    {
+      'logo': 'assets/images/laravelLogo.png',
+      'name': 'assets/images/laravelName.png'
+    },
+    {'logo': 'assets/images/phpLogo.png', 'name': 'assets/images/phpName.png'},
+    {
+      'logo': 'assets/images/springLogo.png',
+      'name': 'assets/images/springName.png'
+    },
+    {'logo': 'assets/images/jeeLogo.png', 'name': 'assets/images/jeeName.png'},
   ];
 
   final title = "Web Development";

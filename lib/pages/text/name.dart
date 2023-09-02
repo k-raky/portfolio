@@ -28,7 +28,7 @@ class Name extends StatelessWidget {
           ),
         ]),
         ClipRect(
-          child: Image.asset('images/memoji.png'),
+          child: Image.asset('assets/images/memoji.png'),
         )
       ],
     );

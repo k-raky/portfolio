@@ -17,7 +17,7 @@ class Bye extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
-            'images/bye.png',
+            'assets/images/bye.png',
             fit: BoxFit.contain,
             height: height * 0.4,
           ),

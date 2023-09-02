@@ -19,7 +19,7 @@ class PhoneNumber extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image.asset(
-          'images/memojiCallme.png',
+          'assets/images/memojiCallme.png',
           fit: BoxFit.contain,
           height: height * 0.3,
         ),

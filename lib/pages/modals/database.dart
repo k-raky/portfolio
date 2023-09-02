@@ -5,11 +5,26 @@ class Database extends StatelessWidget {
   Database({super.key});
 
   final List<Map<String, String>> imgList = [
-    {'logo': 'images/mysqlLogo.png', 'name': 'images/mysqlName.png'},
-    {'logo': 'images/mysqlLogo.png', 'name': 'images/myadminName.png'},
-    {'logo': 'images/postgresLogo.png', 'name': 'images/postgresName.png'},
-    {'logo': 'images/postgresLogo.png', 'name': 'images/pgadminName.png'},
-    {'logo': 'images/firebaseLogo.png', 'name': 'images/firebaseName.png'},
+    {
+      'logo': 'assets/images/mysqlLogo.png',
+      'name': 'assets/images/mysqlName.png'
+    },
+    {
+      'logo': 'assets/images/mysqlLogo.png',
+      'name': 'assets/images/myadminName.png'
+    },
+    {
+      'logo': 'assets/images/postgresLogo.png',
+      'name': 'assets/images/postgresName.png'
+    },
+    {
+      'logo': 'assets/images/postgresLogo.png',
+      'name': 'assets/images/pgadminName.png'
+    },
+    {
+      'logo': 'assets/images/firebaseLogo.png',
+      'name': 'assets/images/firebaseName.png'
+    },
   ];
 
   final title = "Database Management";
