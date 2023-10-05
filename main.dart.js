@@ -59482,7 +59482,7 @@ A.GS.prototype={
 G(a){return new A.md(this.c,"Web Development",null)}}
 A.Dl.prototype={
 G(a){var s=t.rr
-return A.ld(A.a([A.O_(A.a([A.aeu("Raky Kane",B.ag,B.bV.i2(100))],s),!1),A.O_(A.a([A.aeu("Full Stack Mobile Developer",B.zY,B.bW.i2(40))],s),!1),A.Pm(A.nL("assets/images/memoji.png",null,null,null),B.T)],t.D),B.ca,B.fL,B.at)}}
+return A.ld(A.a([A.O_(A.a([A.aeu("Raky Kane",B.ag,B.bV.i2(100))],s),!1),A.O_(A.a([A.aeu("Full Stack Developer",B.zY,B.bW.i2(40))],s),!1),A.Pm(A.nL("assets/images/memoji.png",null,null,null),B.T)],t.D),B.ca,B.fL,B.at)}}
 A.FO.prototype={
 G(a){var s=null
 return A.dF(s,A.fe("Skills",s,B.bV.i2(100),s,s),s,s,s,s,s,s)}}
