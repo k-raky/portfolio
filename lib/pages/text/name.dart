@@ -22,7 +22,7 @@ class Name extends StatelessWidget {
         ]),
         AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
           TyperAnimatedText(
-            "Full Stack Mobile Developer",
+            "Full Stack Developer",
             speed: const Duration(milliseconds: 120),
             textStyle: lightPurpleText.copyWith(fontSize: 40),
           ),
