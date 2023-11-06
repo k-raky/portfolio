@@ -14,7 +14,7 @@ class Projects extends StatelessWidget {
     {
       'screen': 'assets/images/jsit.png',
       'desc': 'Back-office application for WooCommerce order management',
-      'stack': 'Laravel',
+      'stack': 'Boostrap, Laravel',
       'link': null
     },
     {
@@ -63,23 +63,29 @@ class Projects extends StatelessWidget {
     return Container(
         padding: EdgeInsets.all(10),
         width: width,
+        height: height,
         child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: height * 0.1,
+                width: width * 0.3,
                 child: FittedBox(
                     child: Text('Some projects', style: deepPurpleText)),
               ),
+              SizedBox(
+                width: width * 0.2,
+                child: FittedBox(
+                    child:
+                        Text('Slide to discover them all', style: lightText)),
+              ),
               Container(
                   width: width,
-                  height: height * 0.8,
+                  height: height * 0.7,
                   child: CarouselSlider(
                     options: CarouselOptions(
-                        scrollDirection: Axis.horizontal,
-                        autoPlay: true,
-                        autoPlayInterval: Duration(seconds: 2)),
+                      scrollDirection: Axis.horizontal,
+                    ),
                     items: projectsInfo
                         .map((item) => Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
