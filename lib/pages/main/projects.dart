@@ -30,6 +30,12 @@ class Projects extends StatelessWidget {
       'link': null
     },
     {
+      'screen': 'assets/images/wosto.png',
+      'desc': 'A mobile money exchanger application',
+      'stack': 'Flutter, Firebase',
+      'link': null
+    },
+    {
       'screen': 'assets/images/loopAlarm.png',
       'desc': 'A countdown timer loop application',
       'stack': 'Flutter',
