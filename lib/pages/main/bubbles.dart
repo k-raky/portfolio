@@ -79,7 +79,7 @@ class _BubblesState extends State<Bubbles> {
 
     return Container(
         width: width,
-        height: height * 0.5,
+        height: height * 0.7,
         child: GridView.count(
           primary: false,
           padding: EdgeInsets.all(width * 0.02),
