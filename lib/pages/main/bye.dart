@@ -12,6 +12,7 @@ class Bye extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
 
     return Container(
+      height: height * 0.3,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -19,7 +20,7 @@ class Bye extends StatelessWidget {
           Image.asset(
             'assets/images/bye.png',
             fit: BoxFit.contain,
-            width: width * 0.4,
+            width: width * 0.3,
           ),
           SizedBox(
             width: width * 0.1,

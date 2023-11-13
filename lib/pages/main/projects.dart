@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/functions/utils.dart';
 import 'package:portfolio/theme/colors.dart';
 import 'package:portfolio/theme/fonts.dart';
@@ -63,76 +64,55 @@ class Projects extends StatelessWidget {
     return Container(
         padding: EdgeInsets.all(10),
         width: width,
-        height: height,
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width: width * 0.3,
-                child: FittedBox(
-                    child: Text('Some projects', style: deepPurpleText)),
-              ),
-              SizedBox(
-                width: width * 0.2,
-                child: FittedBox(
-                    child:
-                        Text('Slide to discover them all', style: lightText)),
-              ),
-              Container(
-                  width: width,
-                  height: height * 0.7,
-                  child: CarouselSlider(
-                    options: CarouselOptions(
-                      scrollDirection: Axis.horizontal,
-                    ),
-                    items: projectsInfo
-                        .map((item) => Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  item['screen']!,
-                                  fit: BoxFit.contain,
-                                  height: height * 0.5,
-                                ),
-                                SizedBox(
-                                  width: width * 0.5,
-                                  height: height * 0.04,
-                                  child: FittedBox(
-                                    child: Text(
-                                      item['desc']!,
-                                      style: lightText,
-                                    ),
-                                  ),
-                                ),
-                                item['link'] != null
-                                    ? TextButton(
-                                        onPressed: (() async {
-                                          await Utils.launchUri(item['link']!);
-                                        }),
-                                        child: Text(
-                                          "Visiter",
-                                          style: lightPurpleText.copyWith(
-                                              fontSize: 30),
-                                        ))
-                                    : Container(
-                                        height: 0,
-                                      ),
-                                SizedBox(
-                                  width: width * 0.5,
-                                  height: height * 0.04,
-                                  child: FittedBox(
-                                    child: Text(
-                                      "Stack : ${item['stack']}",
-                                      style: deepPurpleText,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ))
-                        .toList(),
-                  ))
-            ]));
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          SizedTextWidget(
+              width: width * 0.3,
+              style: deepPurpleText,
+              content: "Some projects"),
+          SizedTextWidget(
+              width: width * 0.2,
+              style: lightText,
+              content: "Slide to discover them all"),
+          CarouselSlider(
+            options: CarouselOptions(
+              height: Utils().isMobile(context) ? height * 0.4 : height * 0.8,
+              viewportFraction: 1,
+              scrollDirection: Axis.horizontal,
+            ),
+            items: projectsInfo
+                .map((item) => Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          item['screen']!,
+                          fit: BoxFit.fill,
+                          width: width * 0.6,
+                        ),
+                        SizedTextWidget(
+                            width: item['desc']!.length <= 10
+                                ? width * 0.2
+                                : width * 0.4,
+                            style: lightText,
+                            content: item['desc']!),
+                        Visibility(
+                            visible: item['link'] != null,
+                            child: TextButton(
+                                onPressed: (() async {
+                                  await Utils.launchUri(item['link']!);
+                                }),
+                                child: Text(
+                                  "Visiter",
+                                  style: lightPurpleText.copyWith(fontSize: 30),
+                                ))),
+                        SizedTextWidget(
+                            width: width * 0.3,
+                            style: deepPurpleText,
+                            content: "Stack : ${item['stack']}")
+                      ],
+                    ))
+                .toList(),
+          )
+        ]));
   }
 }
