@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/functions/utils.dart';
 import 'package:portfolio/theme/colors.dart';
 
 class Bubble extends StatelessWidget {
@@ -42,7 +43,7 @@ class Bubble extends StatelessWidget {
           icon: FaIcon(
             icon,
             color: color,
-            size: width * 0.02,
+            size: Utils().isMobile(context) ? width * 0.05 : width * 0.02,
           ),
         ));
   }
