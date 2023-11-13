@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/theme/fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -9,26 +10,24 @@ class Name extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
-          TyperAnimatedText(
-            "Raky Kane",
-            speed: const Duration(milliseconds: 100),
-            textStyle: deepPurpleText.copyWith(fontSize: 100),
-          )
-        ]),
-        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
-          TyperAnimatedText(
-            "Full Stack Developer",
-            speed: const Duration(milliseconds: 120),
-            textStyle: lightPurpleText.copyWith(fontSize: 40),
+        SizedTextWidget(
+            width: width * 0.3, style: deepPurpleText, content: "Raky Kane"),
+        SizedTextWidget(
+            width: width * 0.3,
+            style: lightPurpleText,
+            content: "Full Stack Developer"),
+        SizedBox(
+          width: width * 0.3,
+          child: Image.asset(
+            'assets/images/memoji.png',
+            fit: BoxFit.fill,
           ),
-        ]),
-        ClipRect(
-          child: Image.asset('assets/images/memoji.png'),
         )
       ],
     );

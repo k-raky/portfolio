@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Utils {
@@ -16,4 +17,7 @@ class Utils {
       throw Exception('Could not launch $url');
     }
   }
+
+  bool isMobile(BuildContext context) =>
+      MediaQuery.of(context).size.width <= 500;
 }

@@ -17,8 +17,10 @@ class PageContent extends StatefulWidget {
 class _PageContentState extends State<PageContent> {
   @override
   Widget build(BuildContext context) {
-    return PageView(
-        scrollDirection: Axis.vertical,
-        children: [Bubbles(), Projects(), Bye()]);
+    return Container(
+      child: SingleChildScrollView(
+        child: Column(children: [Bubbles(), Projects(), Bye()]),
+      ),
+    );
   }
 }

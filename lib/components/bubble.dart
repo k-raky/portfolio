@@ -19,6 +19,7 @@ class Bubble extends StatelessWidget {
     return Container(
         width: width * 0.2,
         height: height * 0.2,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: white,
           boxShadow: const [
@@ -35,11 +36,13 @@ class Bubble extends StatelessWidget {
           ),
         ),
         child: IconButton(
+          padding: EdgeInsets.all(0),
+          alignment: Alignment.center,
           onPressed: onPress,
           icon: FaIcon(
             icon,
             color: color,
-            size: 70,
+            size: width * 0.05,
           ),
         ));
   }

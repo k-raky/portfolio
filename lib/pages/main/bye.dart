@@ -19,10 +19,10 @@ class Bye extends StatelessWidget {
           Image.asset(
             'assets/images/bye.png',
             fit: BoxFit.contain,
-            height: height * 0.4,
+            width: width * 0.4,
           ),
           SizedBox(
-            width: width * 0.2,
+            width: width * 0.1,
             child: FittedBox(
               child: Text(
                 'Bye',

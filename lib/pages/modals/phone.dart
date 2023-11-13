@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/functions/utils.dart';
 import 'package:portfolio/theme/colors.dart';
 import 'package:portfolio/theme/fonts.dart';
@@ -23,21 +24,16 @@ class PhoneNumber extends StatelessWidget {
           fit: BoxFit.contain,
           height: height * 0.3,
         ),
-        AnimatedTextKit(isRepeatingAnimation: false, animatedTexts: [
-          TypewriterAnimatedText(
-            "00 221 77 282 01 71",
-            speed: const Duration(milliseconds: 60),
-            textStyle: deepPurpleText.copyWith(fontSize: 50),
-          )
-        ]),
+        SizedTextWidget(
+            width: width * 0.4,
+            style: deepPurpleText,
+            content: "00 221 77 282 01 71"),
         TextButton(
             onPressed: (() async {
               await Utils.launchUri('tel:00221772820171');
             }),
-            child: Text(
-              "Call me",
-              style: lightPurpleText.copyWith(fontSize: 30),
-            ))
+            child: SizedTextWidget(
+                width: width * 0.2, style: lightPurpleText, content: "Call me"))
       ],
     );
   }
