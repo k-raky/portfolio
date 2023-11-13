@@ -42,7 +42,7 @@ class Bubble extends StatelessWidget {
           icon: FaIcon(
             icon,
             color: color,
-            size: width * 0.05,
+            size: width * 0.02,
           ),
         ));
   }
