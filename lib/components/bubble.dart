@@ -17,10 +17,14 @@ class Bubble extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
 
+    final size = Utils().isMobile(context) ? 100.0 : 200.0;
+    final psize = Utils().isMobile(context) ? 20.0 : 50.0;
+
     return Container(
-        width: width * 0.2,
-        height: height * 0.2,
+        width: size,
+        height: size,
         alignment: Alignment.center,
+        margin: EdgeInsets.all(psize),
         decoration: BoxDecoration(
           color: white,
           boxShadow: const [
@@ -38,12 +42,16 @@ class Bubble extends StatelessWidget {
         ),
         child: IconButton(
           padding: EdgeInsets.all(0),
+          highlightColor: Colors.transparent,
+          focusColor: Colors.transparent,
+          splashColor: Colors.transparent,
+          hoverColor: Colors.transparent,
           alignment: Alignment.center,
           onPressed: onPress,
           icon: FaIcon(
             icon,
             color: color,
-            size: Utils().isMobile(context) ? width * 0.05 : width * 0.03,
+            size: 40,
           ),
         ));
   }

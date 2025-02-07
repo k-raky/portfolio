@@ -27,13 +27,13 @@ class Mail extends StatelessWidget {
         SizedTextWidget(
             width: Utils().isMobile(context) ? width * 0.9 : width * 0.4,
             style: deepPurpleText,
-            content: "kaneraky12@gmail.com"),
+            content: "kaneraky.work@gmail.com"),
         TextButton(
             onPressed: (() async {
-              await Utils.launchUri('mailto:kaneraky12@gmail.com');
+              await Utils.launchUri('mailto:kaneraky.work@gmail.com');
             }),
             child: SizedTextWidget(
-                width: Utils().isMobile(context) ? width * 0.9 : width * 0.4,
+                width: Utils().isMobile(context) ? width * 0.7 : width * 0.2,
                 style: lightPurpleText,
                 content: "Send me an email"))
       ],

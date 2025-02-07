@@ -17,13 +17,13 @@ class Name extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedTextWidget(
-            width: width * 0.3, style: deepPurpleText, content: "Raky Kane"),
+            width: width * 0.2, style: deepPurpleText, content: "Raky Kane"),
         SizedTextWidget(
-            width: width * 0.3,
+            width: width * 0.2,
             style: lightPurpleText,
             content: "Full Stack Developer"),
         SizedBox(
-          width: width * 0.3,
+          width: width * 0.2,
           child: Image.asset(
             'assets/images/memoji.png',
             fit: BoxFit.fill,

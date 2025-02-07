@@ -17,7 +17,6 @@ import 'package:portfolio/pages/text/name.dart';
 import 'package:portfolio/theme/colors.dart';
 import 'package:portfolio/theme/fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_animated_dialog/flutter_animated_dialog.dart';
 
 class Bubbles extends StatefulWidget {
   const Bubbles({super.key});
@@ -34,32 +33,29 @@ class _BubblesState extends State<Bubbles> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
 
-    return showAnimatedDialog(
-      curve: Curves.easeIn,
-      duration: Duration(milliseconds: 600),
-      context: context,
-      animationType: DialogTransitionType.scale,
-      barrierDismissible: true, // user must tap button!
-      builder: (BuildContext context) {
-        return AlertDialog(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          content: Container(
-              width: width * 0.8, height: height * 0.8, child: content),
-          actions: <Widget>[
-            TextButton(
-              child: const Text(
-                'Close',
-                style: lightPurpleText,
+    return showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            surfaceTintColor: white,
+            backgroundColor: white,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            content: Container(
+                width: width * 0.8, height: height * 0.8, child: content),
+            actions: <Widget>[
+              TextButton(
+                child: const Text(
+                  'Close',
+                  style: TextStyle(fontSize: 20, color: black),
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
               ),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
+            ],
+          );
+        });
   }
 
   @override
@@ -78,51 +74,28 @@ class _BubblesState extends State<Bubbles> {
     final height = MediaQuery.of(context).size.height;
 
     return Container(
+        alignment: Alignment.center,
         width: width,
-        height: height * 0.7,
-        child: GridView.count(
-          primary: false,
-          padding: EdgeInsets.all(width * 0.02),
-          childAspectRatio: isMobile(context) ? (.5 / .3) : (.3 / .5),
-          mainAxisSpacing: width * 0.1,
-          crossAxisSpacing: isMobile(context) ? height * 0.01 : height * 0.1,
-          crossAxisCount: 2,
-          scrollDirection: Axis.horizontal,
+        child: Wrap(
+          alignment: WrapAlignment.spaceEvenly,
+          runAlignment: WrapAlignment.spaceEvenly,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
+            Bubble(
+              icon: FontAwesomeIcons.circleInfo,
+              color: pink,
+              onPress: () => showModal(context, AboutMe()),
+            ),
             Bubble(
                 icon: FontAwesomeIcons.at,
                 color: Colors.red,
                 onPress: () => showModal(context, Mail())),
-            Bubble(
-              icon: FontAwesomeIcons.linkedin,
-              color: Colors.blueAccent,
-              onPress: (() async {
-                await Utils.launchUri('https://www.linkedin.com/in/rakykane/');
-              }),
-            ),
             Bubble(
               icon: FontAwesomeIcons.github,
               color: Colors.black,
               onPress: (() async {
                 await Utils.launchUri('https://github.com/k-raky');
               }),
-            ),
-            Bubble(
-              icon: FontAwesomeIcons.phone,
-              color: Colors.green,
-              onPress: () => showModal(context, PhoneNumber()),
-            ),
-            Bubble(
-              icon: FontAwesomeIcons.file,
-              color: Colors.indigo,
-              onPress: (() async {
-                await Utils.launchFile('assets/files/RakyKane_CV.pdf');
-              }),
-            ),
-            Bubble(
-              icon: FontAwesomeIcons.circleInfo,
-              color: pink,
-              onPress: () => showModal(context, AboutMe()),
             ),
             Bubble(
               icon: FontAwesomeIcons.laptopCode,
