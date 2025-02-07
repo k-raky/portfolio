@@ -92,7 +92,7 @@ class Projects extends StatelessWidget {
                         SizedTextWidget(
                             width: item['desc']!.length <= 10
                                 ? width * 0.2
-                                : width * 0.4,
+                                : width * 0.3,
                             style: lightText,
                             content: item['desc']!),
                         Visibility(
@@ -106,7 +106,7 @@ class Projects extends StatelessWidget {
                                   style: lightPurpleText.copyWith(fontSize: 30),
                                 ))),
                         SizedTextWidget(
-                            width: width * 0.3,
+                            width: width * 0.2,
                             style: deepPurpleText,
                             content: "Stack : ${item['stack']}")
                       ],

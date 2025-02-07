@@ -43,7 +43,7 @@ class Bubble extends StatelessWidget {
           icon: FaIcon(
             icon,
             color: color,
-            size: Utils().isMobile(context) ? width * 0.05 : width * 0.02,
+            size: Utils().isMobile(context) ? width * 0.05 : width * 0.03,
           ),
         ));
   }
