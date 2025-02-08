@@ -2,7 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/functions/utils.dart';
 import 'package:portfolio/theme/colors.dart';
 import 'package:portfolio/theme/fonts.dart';
@@ -25,10 +24,9 @@ class Slideshow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedTextWidget(
-            width: title.length >= 10 ? width * 0.4 : width * 0.2,
-            style: lightPurpleText,
-            content: title),
+        Text(title,
+            overflow: TextOverflow.ellipsis,
+            style: lightPurpleText.copyWith(fontSize: 50)),
         Container(
             width: width,
             height: height * 0.6,
