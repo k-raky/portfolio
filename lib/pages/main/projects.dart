@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/functions/utils.dart';
 import 'package:portfolio/theme/colors.dart';
 import 'package:portfolio/theme/fonts.dart';
@@ -38,15 +37,15 @@ class Projects extends StatelessWidget {
       'link': null
     },
     {
-      'screen': 'assets/images/loopAlarm.png',
-      'desc': 'A countdown timer loop application',
+      'screen': 'assets/images/cashapp.png',
+      'desc': 'Money transfer mobile app',
       'stack': 'Flutter',
       'link': null
     },
     {
-      'screen': 'assets/images/jairy.png',
-      'desc': 'Hair care journal mobile app',
-      'stack': 'React Native',
+      'screen': 'assets/images/loopAlarm.png',
+      'desc': 'A countdown timer loop application',
+      'stack': 'Flutter',
       'link': null
     },
     {
@@ -70,14 +69,11 @@ class Projects extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedTextWidget(
-              width: width * 0.2,
-              style: deepPurpleText,
-              content: "Some projects"),
-          SizedTextWidget(
-              width: width * 0.2,
-              style: lightText,
-              content: "Slide to discover them all"),
+          Text("Some projects",
+              overflow: TextOverflow.ellipsis,
+              style: deepPurpleText.copyWith(fontSize: 50)),
+          Text("Slide to discover them all",
+              overflow: TextOverflow.ellipsis, style: lightText),
           Row(
             children: [
               IconButton(
@@ -110,12 +106,11 @@ class Projects extends StatelessWidget {
                                 fit: BoxFit.fill,
                                 width: width * 0.6,
                               ),
-                              SizedTextWidget(
-                                  width: item['desc']!.length <= 10
-                                      ? width * 0.2
-                                      : width * 0.3,
-                                  style: lightText,
-                                  content: item['desc']!),
+                              Text(
+                                item['desc'] ?? "",
+                                overflow: TextOverflow.ellipsis,
+                                style: lightText.copyWith(fontSize: 30),
+                              ),
                               Visibility(
                                   visible: item['link'] != null,
                                   child: TextButton(
@@ -127,10 +122,11 @@ class Projects extends StatelessWidget {
                                         style: lightPurpleText.copyWith(
                                             fontSize: 30),
                                       ))),
-                              SizedTextWidget(
-                                  width: width * 0.2,
-                                  style: deepPurpleText,
-                                  content: "Stack : ${item['stack']}")
+                              Text(
+                                "Stack : ${item['stack']}",
+                                overflow: TextOverflow.ellipsis,
+                                style: deepPurpleText.copyWith(fontSize: 30),
+                              ),
                             ],
                           ))
                       .toList(),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/theme/fonts.dart';
 
 class AboutMe extends StatelessWidget {
@@ -17,8 +16,9 @@ class AboutMe extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedTextWidget(
-            width: width * 0.2, style: boldText, content: "About me"),
+        Text("About me",
+            overflow: TextOverflow.ellipsis,
+            style: boldText.copyWith(fontSize: 50)),
         SizedBox(
           height: height * 0.05,
         ),

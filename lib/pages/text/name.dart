@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:portfolio/components/sized_text.dart';
 import 'package:portfolio/theme/fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -14,14 +13,15 @@ class Name extends StatelessWidget {
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedTextWidget(
-            width: width * 0.2, style: deepPurpleText, content: "Raky Kane"),
-        SizedTextWidget(
-            width: width * 0.2,
-            style: lightPurpleText,
-            content: "Full Stack Developer"),
+        Text("Raky Kane",
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+            style: deepPurpleText.copyWith(fontSize: 50)),
+        Text("Mobile App Developer",
+            overflow: TextOverflow.ellipsis,
+            style: lightPurpleText.copyWith(fontSize: 40)),
         SizedBox(
           width: width * 0.2,
           child: Image.asset(
